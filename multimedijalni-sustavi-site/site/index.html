@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projektni zadatak iz kolegija Multimedijalni sustavi</title>
+<meta name="description" content="Prezentacijski paket multimedijskih elemenata izrađen za kolegij Multimedijalni sustavi, koji uključuje tekst, sliku, grafiku, zvuk i video.">
+<link rel="icon" href="assets/svg/crest.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#glavni-sadrzaj">Preskoči na sadržaj</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#pocetna">
+      <span class="brand-name">Multimedijalni&nbsp;sustavi</span>
+    </a>
+    <nav class="site-nav" aria-label="Glavna navigacija">
+      <a href="#tekst">Tekst</a>
+      <a href="#slika">Slika</a>
+      <a href="#grafika">Grafika</a>
+      <a href="#zvuk">Zvuk</a>
+      <a href="#video">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main id="glavni-sadrzaj">
+
+  <!-- HERO -->
+  <section class="hero" id="pocetna">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/img/edit-1.jpg" alt="">
+      <div class="hero-scrim"></div>
+    </div>
+    <div class="wrap hero-content">
+      <p class="hero-eyebrow">Projektni zadatak</p>
+      <h1 class="hero-title">Multimedijalni&nbsp;sustavi</h1>
+      <p class="hero-kicker">Pet elemenata, jedna stranica</p>
+      <p class="hero-tagline">Prezentacijski paket koji na jednoj stranici prikazuje pet traženih multimedijskih elemenata, izrađenih uz pomoć suvremenih alata.</p>
+      <a class="btn btn-brass" href="#tekst">Pogledaj elemente</a>
+    </div>
+  </section>
+
+  <!-- TEKST -->
+  <section class="section split" id="tekst">
+    <div class="wrap split-grid">
+
+      <article class="ticket-card">
+        <h2 class="element-title">Tekst</h2>
+        <p class="element-body">Reklamni letak izrađen alatom za stolno izdavaštvo, kao primjer pripreme materijala za tisak.</p>
+        <div class="ticket-actions">
+          <a class="btn btn-outline" href="assets/docs/primjer-letka.pdf" target="_blank" rel="noopener">Preuzmi primjer letka (PDF)</a>
+        </div>
+      </article>
+
+      <article class="about-copy">
+        <p class="eyebrow">Oblikovanje teksta</p>
+        <h2>Pravilno oblikovan tekst unutar stranice</h2>
+        <p>Ovaj odjeljak prikazuje osnovno oblikovanje teksta izravno u HTML-u i CSS-u: naslove, odlomke, isticanja i razmak između elemenata u skladu s tipografskim pravilima.</p>
+
+        <p class="steps-heading">Koraci izrade letka</p>
+        <p class="steps-tool">Alat: Figma</p>
+        <ol class="steps">
+          <li>Postavljena je stranica (frame) u formatu pogodnom za tisak, s vodilicama za margine i sigurnosnu zonu.</li>
+          <li>Dodana je fotografija kao pozadina, prilagođena veličini stranice i djelomično zatamnjena preko oblika s prozirnošću (overlay).</li>
+          <li>Postavljena je tipografska hijerarhija — istaknuti naslov, podnaslov i tijelo teksta s jasno definiranim veličinama i razmacima.</li>
+          <li>Vektorski oblici (linije, značka, okviri s cijenom) izrađeni su izravno u Figmi i poravnati pomoću mreže i vodilica.</li>
+          <li>Boje su ujednačene prema odabranoj paleti, a kontrast teksta provjeren radi čitljivosti.</li>
+          <li>Gotov dizajn izvezen je kao PDF u rezoluciji pogodnoj za tisak.</li>
+        </ol>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SLIKA -->
+  <section class="section" id="slika">
+    <div class="wrap">
+      <h2 class="section-title">Slika</h2>
+      <p class="section-lede">Izvorna fotografija i dvije obrađene verzije istog kadra, obrađene u alatu za uređivanje fotografija.</p>
+
+      <div class="gallery" role="list">
+        <button class="gallery-item" role="listitem" data-full="assets/img/original.jpg" data-caption="Original: fotografija bez obrade">
+          <img src="assets/img/original-thumb.jpg" alt="Original fotografija">
+          <span class="gallery-label">Original</span>
+        </button>
+        <button class="gallery-item" role="listitem" data-full="assets/img/edit-1.jpg" data-caption="Obrada 1">
+          <img src="assets/img/edit-1-thumb.jpg" alt="Prva obrađena verzija fotografije">
+          <span class="gallery-label">Obrada 1</span>
+        </button>
+        <button class="gallery-item" role="listitem" data-full="assets/img/edit-2.jpg" data-caption="Obrada 2: dodano nebo s oblacima">
+          <img src="assets/img/edit-2-thumb.jpg" alt="Druga obrađena verzija fotografije, s dodanim oblacima">
+          <span class="gallery-label">Obrada 2</span>
+        </button>
+      </div>
+
+      <p class="steps-heading">Koraci obrade</p>
+      <p class="steps-tool">Alat: GIMP</p>
+      <ol class="steps">
+        <li>Original fotografija otvorena je u GIMP-u kao osnovni sloj, bez naknadnih izmjena (Original).</li>
+        <li>Za prvu obradu prilagođene su razine (Levels) i kontrast, te lagano pojačana zasićenost boja mora i neba (Obrada 1).</li>
+        <li>Za drugu obradu dodana je zasebna fotografija oblaka kao novi sloj iznad neba.</li>
+        <li>Sloj s oblacima pozicioniran je i uklopljen pomoću maske sloja (layer mask), kojom je izbrisan/omekšan rub prema horizontu.</li>
+        <li>Boje i osvjetljenje dvaju slojeva usklađeni su alatima Curves i Color Balance kako bi kompozicija djelovala prirodno.</li>
+        <li>Slika je spljoštena (Flatten Image) i izvezena kao PNG/JPG u punoj rezoluciji (Obrada 2).</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GRAFIKA -->
+  <section class="section section-dark" id="grafika">
+    <div class="wrap crest-grid">
+      <div class="crest-showcase">
+        <img src="assets/svg/crest.svg" alt="Primjer vektorske grafike: kružna značka sa stiliziranim sidrom" class="crest-large">
+      </div>
+      <div class="crest-copy">
+        <h2>Grafika</h2>
+        <p>Primjer vektorske grafike izrađene u Inkscapeu: kružna značka sa stiliziranim sidrom, izrađena slojevima, isječcima (clip-path) i gradijentima.</p>
+
+        <p class="steps-heading">Koraci izrade</p>
+        <p class="steps-tool">Alat: Inkscape</p>
+        <ol class="steps">
+          <li>Izrađen je sloj "Pozadina" s dvije koncentrične kružnice — punom tamnom podlogom i tankim obrubom u boji mjedi.</li>
+          <li>Motiv sidra nacrtan je linijama i lukovima (Bézierov alat) u zasebnom sloju "Grb", te ograničen na kružni oblik pomoću isječka (clip-path).</li>
+          <li>Dodan je sloj "Sjena" s radijalnim gradijentom i maskom (mask), čime je postignut blagi vinjetni efekt prema rubovima značke.</li>
+          <li>U sloju "Tekst" natpis "SCOUSE FC" postavljen je na zakrivljenu putanju (text-on-path) prateći gornji rub kruga, a "EST. 1908" poravnat je ravno na dnu.</li>
+          <li>Boje su ujednačene prema paleti (tamnoplava, mjed, krem), a datoteka je spremljena u SVG formatu radi skalabilnosti bez gubitka kvalitete.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZVUK + VIDEO -->
+  <section class="section section-dark split" id="zvuk">
+    <div class="wrap split-grid split-grid-reverse">
+
+      <article class="media-card" id="video">
+        <h2>Video</h2>
+        <p>Video isječak nastao kao vježba iz video montaže, a iskorišten je i kao video prilog za ovaj projekt.</p>
+        <video class="video-player" controls preload="metadata" poster="assets/video/poster.jpg">
+          <source src="assets/video/video-prilog.mp4" type="video/mp4">
+          Vaš preglednik ne podržava reprodukciju videa.
+        </video>
+
+        <p class="steps-heading">Koraci montaže</p>
+        <p class="steps-tool">Alat: OpenShot</p>
+        <ol class="steps">
+          <li>Izvorna snimka uvezena je u OpenShot i postavljena na video traku (timeline).</li>
+          <li>Snimka je skraćena rezanjem (trim/cut) na dio koji se koristi u prilogu.</li>
+          <li>Dodani su prijelazi (transitions) i po potrebi jednostavni titl/natpis preko slike.</li>
+          <li>Boja i osvjetljenje prilagođeni su ugrađenim alatima za korekciju (brightness/contrast/saturation).</li>
+          <li>Zvučni zapis unutar videa normaliziran je radi ujednačene glasnoće.</li>
+          <li>Projekt je izvezen (export) u MP4 formatu u punoj rezoluciji izvorne snimke.</li>
+        </ol>
+      </article>
+
+      <article class="media-card">
+        <h2>Zvuk</h2>
+        <p>Audio snimka nastala kao vježba obrade zvuka, a iskorištena je i kao zvučni prilog za ovaj projekt.</p>
+        <audio class="audio-player" controls preload="none">
+          <source src="assets/audio/zvuk-prilog.mp3" type="audio/mpeg">
+          <source src="assets/audio/zvuk-prilog.ogg" type="audio/ogg">
+          Vaš preglednik ne podržava reprodukciju zvuka.
+        </audio>
+
+        <p class="steps-heading">Koraci obrade zvuka</p>
+        <p class="steps-tool">Alat: Audacity</p>
+        <ol class="steps">
+          <li>Zvučni zapis uvezen je u Audacity kao radna staza (track).</li>
+          <li>Uklonjena je tišina na početku i kraju snimke rezanjem (cut/trim).</li>
+          <li>Primijenjeno je smanjenje šuma (Noise Reduction) radi čišćeg zvuka pozadine.</li>
+          <li>Razina glasnoće ujednačena je alatom Normalize, a po potrebi blago prilagođena ekvilizacijom (Equalization).</li>
+          <li>Gotova snimka izvezena je u WAV formatu, a zatim dodatno komprimirana u MP3/OGG za korištenje na webu.</li>
+        </ol>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div class="footer-brand">
+      <div>
+        <p class="footer-club">Multimedijalni sustavi</p>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <p>Projektni zadatak iz kolegija Multimedijalni sustavi</p>
+      <p>Emil Anđelić</p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Zatvori prikaz slike">&times;</button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
